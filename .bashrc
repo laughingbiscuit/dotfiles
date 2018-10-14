@@ -6,6 +6,10 @@ export LANGUAGE=en_GB.UTF-8
 # Setup our dotconfig alias
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# Setup other aliases
+alias lbdk-build='docker build -t laughingbiscuit/lbdk ~/lbdk'
+alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk tmux'
+
 # Configure prompt
 export PS1="♫ "
 
