@@ -14,6 +14,9 @@ alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk'
 # Configure prompt
 export PS1="♫ "
 
+# Add to path
+export PATH=~/.npm-global:$PATH
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
