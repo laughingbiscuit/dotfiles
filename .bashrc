@@ -3,6 +3,9 @@ export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
 
+# add out aliases
+source ~/lbdk/src/lbdk-aliases
+
 # Setup our dotconfig
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotconfig config --local status.showUntrackedFiles no
