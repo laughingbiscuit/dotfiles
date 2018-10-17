@@ -26,3 +26,6 @@ map gg=G :Neoformat<CR>
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufRead,BufNewFile Vagrantfile set filetype=ruby 
+
+" disable Ex mode
+map Q <Nop>
