@@ -18,7 +18,7 @@ alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk'
 export PS1="♫ "
 
 # Add to path
-export PATH=~/.npm-global:$PATH
+export PATH=~/.npm-global/bin:$PATH
 
 # get current branch in git repo
 function parse_git_branch() {
