@@ -17,6 +17,9 @@ alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk'
 # Configure prompt
 export PS1="♫ "
 
+# Configure editor
+export EDITOR="nvim"
+
 # Add to path
 export PATH=~/.npm-global/bin:$PATH
 
