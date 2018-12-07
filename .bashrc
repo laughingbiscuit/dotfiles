@@ -8,7 +8,7 @@ export LANGUAGE=en_GB.UTF-8
 
 # Setup our dotconfig
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-dotconfig config --local status.showUntrackedFiles no
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
 # Setup other aliases
 alias lbdk-build='docker build -t laughingbiscuit/lbdk ~/lbdk'
