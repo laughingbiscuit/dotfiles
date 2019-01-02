@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 # Set Locale Variables
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
@@ -18,7 +20,7 @@ alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk'
 export PS1="♫ "
 
 # Configure editor
-export EDITOR="nvim"
+export EDITOR="vim"
 
 # Add to path
 export PATH=~/.npm-global/bin:$PATH
