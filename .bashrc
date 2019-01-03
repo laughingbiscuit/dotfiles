@@ -1,20 +1,13 @@
 #!/bin/bash 
 
 # Set Locale Variables
-export LC_ALL=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8 2>/dev/null
 export LANG=en_GB.UTF-8
 export LANGUAGE=en_GB.UTF-8
-
-# add our aliases
-# source ~/devkit/aliases
 
 # Setup our dotconfig
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
-
-# Setup other aliases
-alias lbdk-build='docker build -t laughingbiscuit/lbdk ~/lbdk'
-alias lbdk='docker run -it -v $(pwd):/home/docker/src laughingbiscuit/lbdk'
 
 # Configure prompt
 export PS1="♫ "
@@ -73,3 +66,4 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
+export PATH=$PATH:$HOME/lbdk/scripts
