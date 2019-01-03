@@ -1,9 +1,11 @@
 #!/bin/bash 
 
-# Set Locale Variables
-export LC_ALL=en_GB.UTF-8 2>/dev/null
-export LANG=en_GB.UTF-8
-export LANGUAGE=en_GB.UTF-8
+# Set Locale Variables (if system supports this - termux doesn't)
+if [ -f /etc/locale.gen ]; then
+	export LC_ALL=en_GB.UTF-8
+	export LANG=en_GB.UTF-8
+	export LANGUAGE=en_GB.UTF-8
+fi
 
 # Setup our dotconfig
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
