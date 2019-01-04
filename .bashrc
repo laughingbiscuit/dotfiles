@@ -11,6 +11,9 @@ fi
 alias dotconfig='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
+# aliases
+alias lbdk-creds='. ~/lbdk/scripts/lbdk-creds.sh'
+
 # Configure prompt
 export PS1="♫ "
 
