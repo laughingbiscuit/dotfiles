@@ -5,8 +5,11 @@ set path+=**
 set wildignore+=**/node_modules/**
 set wildmenu
 set ts=4
+set softtabstop=0
 set shiftwidth=4
 set relativenumber
+set expandtab
+set smarttab
 
 let g:netrw_altv=1
 let g:netrw_alto=1
