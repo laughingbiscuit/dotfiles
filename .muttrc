@@ -16,3 +16,6 @@ bind index G imap-fetch-mail
 set editor = "vim"
 set charset = "utf-8"
 set record = ''
+set sort = reverse-date-received
+macro index,pager \cb "<pipe-message> urlscan<Enter>""get urls from message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>""get urls from message"
