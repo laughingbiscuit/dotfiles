@@ -75,5 +75,5 @@ export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
 export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target
 
 # source bash completion
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \ . /usr/share/bash-completion/bash_completion
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
 
