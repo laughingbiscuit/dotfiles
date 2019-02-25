@@ -72,3 +72,7 @@ function parse_git_dirty {
 
 export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
 export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target
+
+# source bash completion
+. /etc/bash_completion
+alias dwarffortress=./target/df/df_linux/df
