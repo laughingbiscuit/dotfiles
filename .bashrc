@@ -15,6 +15,9 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 alias lbdk-creds='. ~/lbdk/scripts/lbdk-creds.sh'
 alias dwarffortress='./target/df/df_linux/df'
 
+# source bash completion
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
+
 # Configure prompt
 export PS1="♫ "
 
@@ -74,6 +77,4 @@ function parse_git_dirty {
 export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
 export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target
 
-# source bash completion
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion
 
