@@ -10,6 +10,7 @@ set shiftwidth=4
 set relativenumber
 set expandtab
 set smarttab
+set directory=$HOME/.vim/swapfiles//
 
 let g:netrw_altv=1
 let g:netrw_alto=1
