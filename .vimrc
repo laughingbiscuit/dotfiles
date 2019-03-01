@@ -4,9 +4,9 @@ filetype plugin on
 set path+=**
 set wildignore+=**/node_modules/**
 set wildmenu
-set ts=4
+set ts=2
 set softtabstop=0
-set shiftwidth=4
+set shiftwidth=2
 set relativenumber
 set expandtab
 set smarttab
