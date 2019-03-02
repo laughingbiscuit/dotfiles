@@ -1,0 +1,4 @@
+[DEFAULT]
+region = eu-west
+type = g6-standard-4
+image = linode/debian9
