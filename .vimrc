@@ -33,3 +33,7 @@ au BufRead,BufNewFile Vagrantfile set filetype=ruby
 
 " disable Ex mode
 map Q <Nop>
+
+function! ExecLine()
+  exec "!".getline(".")
+endfunction
