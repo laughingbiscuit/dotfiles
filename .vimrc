@@ -11,6 +11,7 @@ set relativenumber
 set expandtab
 set smarttab
 set directory=$HOME/.vim/swapfiles//
+set tags=tags;/
 
 let g:netrw_altv=1
 let g:netrw_alto=1
@@ -19,13 +20,10 @@ let g:netrw_banner=0
 set splitbelow
 set splitright
 
-"set Formatters
-au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
-au FileType javascript setlocal equalprg=js-beautify
-
 " map jk to escape
 inoremap jk <ESC>
 
+"set formatters
 map gg=G :Neoformat<CR>
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -37,3 +35,8 @@ map Q <Nop>
 function! ExecLine()
   exec "!".getline(".")
 endfunction
+
+function! CopyLine()
+  exec "!tmux send-keys -t1 '".getline(".")."' && tmux select-pane -t1"
+endfunction
+noremap hjkl :call CopyLine()<CR><CR>
