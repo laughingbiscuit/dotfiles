@@ -1,4 +1,6 @@
+[core]
+account = sean@laughingbiscuit.com
+
 [compute]
-zone = europe-west4-a
-region = europe-west4
+zone = europe-west2-c
 
