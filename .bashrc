@@ -75,5 +75,5 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
-export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin
+export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin:$HOME/.composer/vendor/bin
 
