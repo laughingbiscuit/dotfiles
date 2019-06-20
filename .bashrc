@@ -14,6 +14,7 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 # aliases
 alias lbdk-creds='. ~/lbdk/scripts/lbdk-creds.sh'
 alias dwarffortress='./target/df/df_linux/df'
+alias lbdk-gcp-instance='gcloud compute instances create debug --machine-type n1-standard-4 --image-project debian-cloud --image-family debian-9'
 
 # source bash completion
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && . /usr/share/bash-completion/bash_completion

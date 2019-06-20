@@ -28,5 +28,5 @@ BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 ColorForeground=#dcdcdc
 ColorBackground=#2c2c2c
 ColorCursor=#dcdcdc
-BackgroundDarkness=0.740000
+BackgroundDarkness=0.880000
 
