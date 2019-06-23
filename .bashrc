@@ -13,7 +13,6 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntra
 
 # aliases
 alias lbdk-creds='. ~/lbdk/scripts/lbdk-creds.sh'
-alias dwarffortress='./target/df/df_linux/df'
 alias lbdk-gcp-instance='gcloud compute instances create debug --machine-type n1-standard-4 --image-project debian-cloud --image-family debian-9'
 
 # source bash completion
@@ -78,3 +77,6 @@ function parse_git_dirty {
 export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
 export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin:$HOME/.composer/vendor/bin
 
+
+# added by travis gem
+[ -f /home/sean/.travis/travis.sh ] && source /home/sean/.travis/travis.sh
