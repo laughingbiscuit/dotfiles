@@ -13,6 +13,10 @@ set smarttab
 set directory=$HOME/.vim/swapfiles//
 set tags=tags;/
 
+"need to add go back end of line and verticle highlight
+set virtualedit+=all
+set colorcolumn=80
+
 let g:netrw_altv=1
 let g:netrw_alto=1
 let g:netrw_banner=0
