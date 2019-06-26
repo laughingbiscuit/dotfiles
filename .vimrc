@@ -44,3 +44,5 @@ function! CopyLine()
   exec "!tmux send-keys -t1 '".getline(".")."' && tmux select-pane -t1"
 endfunction
 noremap hjkl :call CopyLine()<CR><CR>
+
+noremap ; :
