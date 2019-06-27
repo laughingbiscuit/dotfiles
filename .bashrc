@@ -79,4 +79,4 @@ export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin:$HOME/.
 
 
 # added by travis gem
-[ -f /home/sean/.travis/travis.sh ] && source /home/sean/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
