@@ -1,6 +1,8 @@
 [core]
 account = sean@laughingbiscuit.com
+project = seansgproject
 
 [compute]
-zone = europe-west2-c
+zone = europe-west1-d
+region = europe-west1
 
