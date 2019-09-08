@@ -77,7 +77,7 @@ function parse_git_dirty {
 
 if [ -f /.dockerenv ]; then
   export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
-elif [ -z $SSH-TTY]; then
+elif [ -z $SSH-TTY ]; then
   export PS1="\[\e[36m\]♫\[\e[m\] \`parse_git_branch\` "
 else
   export PS1="\[\e[36m\]ф\[\e[m\] \`parse_git_branch\` "
