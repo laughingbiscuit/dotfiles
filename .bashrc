@@ -2,9 +2,9 @@
 
 # Set Locale Variables (if system supports this - termux doesn't)
 if [ -f /etc/locale.gen ]; then
-	export LC_ALL=en_GB.UTF-8
-	export LANG=en_GB.UTF-8
-	export LANGUAGE=en_GB.UTF-8
+	export LC_ALL=en_US.UTF-8
+	export LANG=en_US.UTF-8
+	export LANGUAGE=en_US.UTF-8
 fi
 
 # Setup our dotconfig
@@ -87,3 +87,6 @@ export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin:$HOME/.
 
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+# added by travis gem
+[ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
