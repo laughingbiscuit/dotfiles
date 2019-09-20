@@ -83,10 +83,3 @@ else
   export PS1="\[\e[36m\]ф\[\e[m\] \`parse_git_branch\` "
 fi
 export PATH=$PATH:$HOME/lbdk/scripts:$HOME/lbdk/target:/usr/local/go/bin:$HOME/.composer/vendor/bin:$HOME/.config/composer/vendor/bin
-
-
-# added by travis gem
-[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-
-# added by travis gem
-[ -f /home/vagrant/.travis/travis.sh ] && source /home/vagrant/.travis/travis.sh
