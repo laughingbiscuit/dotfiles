@@ -46,3 +46,5 @@ endfunction
 noremap hjkl :call CopyLine()<CR><CR>
 
 noremap ; :
+let g:netrw_liststyle = 3
+
